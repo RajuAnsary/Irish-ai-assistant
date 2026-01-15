@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Irish Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+  <h2>Talk to your AI assistant</h2>
+
+  <div class="wave" id="wave">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <p id="status">Idle</p>
+
+  <button id="startBtn">Activate</button>
+  <button id="stopBtn" disabled>Deactivate</button>
+</div>
+
+<div class="footer">
+  © Raju • Built with<span class="heart">♥</span>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
